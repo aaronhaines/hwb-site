@@ -4,6 +4,12 @@
 .dark-blue-bg {
   background-color: #006579;
 }
+.light-brown-bg {
+  background-color: #c0b7ae;
+}
+.light-grey-bg {
+  background-color: #e7e7e8;
+}
 /* Mixin */
 /* Implementation */
 .rounded-box {
@@ -11,14 +17,36 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+.inner-container {
+  background: white;
+  margin: 20px 50px 0px 50px;
+}
+.container {
+  background: #c0b7ae;
+}
+.container p {
+  color: #fff;
+  line-height: 100px;
+  background: #006579;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.logo-large {
+  padding-top: 10px;
+}
 /* ============================== */
 /* ! Layout for desktop version   */
 /* ============================== */
+body {
+  background: #c0b7ae;
+}
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
 @media handheld, only screen and (max-width: 767px) {
-  
+  body {
+    background: #c0b7ae;
+  }
 }
 /* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */

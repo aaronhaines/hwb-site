@@ -1,5 +1,7 @@
 @hwb-dark-yellow: #FF9A32;
 @hwb-dark-blue: #006579;
+@hwb-light-brown: #C0B7AE;
+@hwb-light-grey: #e7e7e8;
 
 .dark-yellow-bg {
 	background-color: @hwb-dark-yellow;
@@ -7,6 +9,14 @@
 
 .dark-blue-bg {
 	background-color: @hwb-dark-blue;
+}
+
+.light-brown-bg {
+	background-color: @hwb-light-brown;
+}
+
+.light-grey-bg {
+	background-color: @hwb-light-grey;
 }
 
 /* Mixin */
@@ -21,12 +31,33 @@
 	.border-radius(5px);
 }
 
+.inner-container {
+	background: white;
+	margin: 20px 50px 0px 50px;
+}
+
+.container {
+	background: @hwb-light-brown;
+}
+
+.container p {
+	color: #fff;
+	line-height: 100px;
+	background: @hwb-dark-blue;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+.logo-large {
+	padding-top: 10px;
+}
+
 /* ============================== */
 /* ! Layout for desktop version   */
 /* ============================== */
 
 	body {
-		
+		background: @hwb-light-brown;
 	}
 	
 
@@ -37,7 +68,7 @@
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
-		
+		background: @hwb-light-brown;
 	}
 
 }
