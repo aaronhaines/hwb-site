@@ -1,0 +1,31 @@
+.dark-yellow-bg {
+  background-color: #ff9a32;
+}
+.dark-blue-bg {
+  background-color: #006579;
+}
+/* Mixin */
+/* Implementation */
+.rounded-box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+@media handheld, only screen and (max-width: 767px) {
+  
+}
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /*	.logo {
+  		background: url(logo2x.jpg) no-repeat;
+  		background-size: 212px 303px;
+  	}*/
+}
