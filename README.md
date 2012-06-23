@@ -1,4 +1,4 @@
 hwb-site
 ========
 
-HWB website
+This is the repo for the HWB Wordpress website
