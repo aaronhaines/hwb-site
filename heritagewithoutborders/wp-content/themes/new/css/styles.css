@@ -11,6 +11,16 @@
   background-color: #e7e7e8;
 }
 /* Mixin */
+.nav ul {
+  list-style: none;
+}
+.nav li {
+  color: #006579;
+  background: #e7e7e8;
+  font-size: 12px;
+  padding-left: 4px;
+  margin-bottom: 2px;
+}
 /* Implementation */
 .rounded-box {
   -webkit-border-radius: 5px;
@@ -25,14 +35,22 @@
   background: #c0b7ae;
 }
 .container p {
-  color: #fff;
-  line-height: 100px;
-  background: #006579;
-  text-align: center;
+  color: #444;
+  background: white;
   margin: 20px 0 0 0;
 }
 .logo-large {
   padding-top: 10px;
+}
+.header div {
+  margin-bottom: 20px;
+}
+.footer div {
+  margin-top: 20px;
+}
+.nav-title-box {
+  height: 30px;
+  margin-bottom: 2px;
 }
 /* ============================== */
 /* ! Layout for desktop version   */
@@ -53,7 +71,7 @@ body {
 /* ========================================== */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /*	.logo {
-  		background: url(logo2x.jpg) no-repeat;
-  		background-size: 212px 303px;
-  	}*/
+      		background: url(logo2x.jpg) no-repeat;
+      		background-size: 212px 303px;
+      	}*/
 }
