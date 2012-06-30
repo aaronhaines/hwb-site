@@ -44,13 +44,19 @@
 }
 .hwb-nav ul {
   list-style: none;
+  text-align: right;
 }
-.hwb-nav li {
-  padding-left: 4px;
-  margin-bottom: 2px;
+.hwb-nav ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
   border-bottom: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ffffff;
+  line-height: 22px;
+}
+.hwb-nav ul li:hover {
+  background: white;
 }
 /* Implementation */
 .rounded-box {
@@ -76,13 +82,17 @@ body {
   padding: 40px;
 }
 .nav-title-box {
+  color: white;
   width: 200px;
   height: 54px;
   margin-bottom: 2px;
 }
-.nav-title-box p {
+.nav-title-box h5 {
   color: white;
-  padding: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  display: block;
+  line-height: 18px;
 }
 .content h1 {
   color: #006579;
