@@ -80,12 +80,17 @@ body {
 .logo-large {
   padding-top: 10px;
 }
-.header div {
+header {
   margin-bottom: 20px;
 }
-.footer div {
+footer {
   margin-top: 20px;
-  padding: 40px;
+  margin-bottom: 20px;
+  padding: 20px, 40px, 20px, 40px;
+  background-color: #e7e7e8;
+}
+footer div {
+  background: inherit;
 }
 .nav-title-box {
   color: white;

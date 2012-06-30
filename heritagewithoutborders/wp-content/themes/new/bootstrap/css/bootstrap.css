@@ -199,6 +199,7 @@ a:hover {
 .navbar-fixed-bottom .container {
   width: 940px;
   background: white;
+  margin-bottom:20px;
   .drop-shadow(5, 0, 2, 0.5);
 }
 
