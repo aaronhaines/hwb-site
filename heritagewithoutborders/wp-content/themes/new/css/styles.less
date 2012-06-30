@@ -1,3 +1,5 @@
+@import "elements.less";
+
 .dark-yellow-bg {
   background-color: #ff9a32;
 }
@@ -11,15 +13,37 @@
   background-color: #e7e7e8;
 }
 /* Mixin */
-.nav ul {
+
+.nav-grad-bg {
+  background-image: linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+  background-image: -o-linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+  background-image: -moz-linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+  background-image: -webkit-linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+  background-image: -ms-linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.44, rgb(255,255,255)),
+    color-stop(0.72, rgb(222,222,222)));
+}
+
+.hwb-nav {
+  width: 200px;
+  .nav-grad-bg()
+}
+
+.hwb-nav ul {
   list-style: none;
 }
-.nav li {
-  color: #006579;
-  background: #e7e7e8;
+.hwb-nav li {
   font-size: 12px;
   padding-left: 4px;
   margin-bottom: 2px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
 }
 /* Implementation */
 .rounded-box {
@@ -27,11 +51,8 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-.inner-container {
-  background: white;
-  margin: 20px 50px 0px 50px;
-}
-.container {
+
+body {
   background: #c0b7ae;
 }
 .container p {
@@ -50,8 +71,13 @@
 }
 
 .nav-title-box {
-	height: 30px;
+  width: 200px;
+	height: 54px;
 	margin-bottom: 2px;
+}
+
+.video-embed {
+  margin-top: 20px;
 }
 /* ============================== */
 /* ! Layout for desktop version   */

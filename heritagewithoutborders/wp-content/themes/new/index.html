@@ -20,10 +20,10 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <link rel="stylesheet" href="css/style.css">
-
     <!-- The 1140px Grid - http://cssgrid.net/ -->
-  <link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+  <!--<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />-->
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen" />
 
   <!-- HWB Styles -->
   <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
@@ -44,7 +44,6 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
   <div class="container">
-    <div class="inner-container">
 
       <header>
         <div class="logo-large">
@@ -53,36 +52,40 @@
       </header>
       <div role="main">
           <div class="row">
-            <div class="twocol nav">
-              <div class="dark-yellow-bg nav-title-box">
+            <div class="span3">
+              <div class="hwb-nav">
+                <div class="dark-yellow-bg nav-title-box">
+                </div>
+
+                <ul>
+                  <li>Home</li>
+                  <li>What we do</li>
+                  <li>Who we are</li>
+                  <li>Who we work with</li>
+                  <li>Our partners and projects</li>
+                  <li>Ancient Merv project</li>
+                  <li>Vacancies</li>
+                  <li>News</li>
+                  <li>Blog</li>
+                </ul>
               </div>
-              <ul>
-                <li>Home</li>
-                <li>What we do</li>
-                <li>Who we are</li>
-                <li>Who we work with</li>
-                <li>Our partners and projects</li>
-                <li>Ancient Merv project</li>
-                <li>Vacancies</li>
-                <li>News</li>
-                <li>Blog</li>
-              </ul>
             </div>
-            <div class="eightcol">
+            <div class="span6 content">
+              <h1>BECAUSE HERITAGE MATERS</h1>
               <p>Heritage Without Borders is a unique social enterprise working in developing countries to:
 build capacity in heritage skills;
 support heritage projects in situations of poverty, and following conflict and disaster; and
 provide valuable work experience for students and professionals in the heritage sector.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/v5MwSvwlMPY" frameborder="0" allowfullscreen></iframe>
-
+<div class="video-embed">
+  <iframe width="460" height="300" src="http://www.youtube.com/embed/v5MwSvwlMPY" frameborder="0" allowfullscreen></iframe>
+</div>
 <p>We form long-term partnerships with governmental and non-governmental organisations to understand knowledge and skill gaps.
 
 Our teams of volunteers support and work alongside local communities to understand, interpret, use and conserve their tangible and intangible heritage.
 
 Find out more about volunteering or partnering with us.</p>
             </div>
-            <div class="twocol last">
+            <div class="span3">
               <p>Column 3 - Sidebar</p>
             </div>
           </div>
@@ -101,7 +104,6 @@ Heritage Without Borders Community Interest Company is registered in England and
         </div>
       </footer>
 
-    </div>
   </div>
   <!-- JavaScript at the bottom for fast page loading -->
 
