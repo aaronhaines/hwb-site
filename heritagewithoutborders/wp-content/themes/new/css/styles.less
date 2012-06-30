@@ -32,9 +32,17 @@
 
 .hwb-nav {
   width: 200px;
-  color: @hwb-dark-blue;
-  font-size: 14px;
   .nav-grad-bg();
+  
+  a {
+    color: @hwb-dark-blue;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover {
+      font-style: bold;
+    }
+  }
+
   ul {
     list-style: none;
     text-align: right;
