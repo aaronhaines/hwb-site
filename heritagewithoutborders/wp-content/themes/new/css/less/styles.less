@@ -1,0 +1,170 @@
+@import "hwb-colors.less";
+@import "elements.less";
+
+.dark-yellow-bg {
+  background-color: @hwb-dark-yellow;
+}
+.dark-blue-bg {
+  background-color: @hwb-dark-blue;
+}
+.light-brown-bg {
+  background-color: @hwb-light-brown;
+}
+.light-grey-bg {
+  background-color: @hwb-light-grey;
+}
+/* Mixin */
+
+.nav-grad-bg {
+  background-image: linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+  background-image: -o-linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+  background-image: -moz-linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+  background-image: -webkit-linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+  background-image: -ms-linear-gradient(left , rgb(255,255,255) 44%, rgb(222,222,222) 72%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.44, rgb(255,255,255)),
+    color-stop(0.72, rgb(222,222,222)));
+}
+
+.hwb-nav {
+  width: 200px;
+  .nav-grad-bg();
+  
+  a {
+    color: @hwb-dark-blue;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover {
+      font-style: bold;
+    }
+  }
+
+  ul {
+    list-style: none;
+    text-align: right;
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 2px;
+      border-bottom: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #ffffff;
+      line-height: 22px;
+       &:hover {
+        background: white;
+      }
+    }
+  }
+}
+
+
+/* Implementation */
+.rounded-box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container {
+  background-image: url('../img/paper-tile.jpg');
+  background-repeat: repeat; 
+  .drop-shadow(0px,0px,2px,0.5)
+
+}
+
+.container p {
+  color: #444;
+}
+
+.logo-large {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  .light-grey-bg();
+  background-image: url('../img/footer-tile.jpg');
+  background-repeat: repeat; 
+}
+
+footer > div {
+  font-size: 12px;
+  padding: 20px 30px 10px 30px;
+}
+
+footer > div {
+  div:first-child {
+    padding-top: 14px;
+    span {
+      color: @hwb-dark-blue;
+    }
+    a {
+      color: @hwb-light-brown;
+    }
+  }
+}
+
+.nav-title-box {
+  color: white;
+  width: 200px;
+	height: 54px;
+	margin-bottom: 0px;
+}
+
+.nav-title-box h5 {
+  color: white;
+  padding-left: 15px;
+  padding-top: 10px;
+  display: block;
+  line-height: 18px;
+}
+
+.content h1 {
+  color: @hwb-dark-blue;
+}
+
+.content h1+p {
+  font-weight: bold;
+}
+
+.content .video-embed {
+  margin-top: 20px;
+}
+
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+body {
+  background: #c0b7ae;
+  background-image:url('../img/bg-tile.jpg');
+  background-repeat:repeat;
+}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+@media handheld, only screen and (max-width: 767px) {
+  body {
+    background: #c0b7ae;
+  }
+}
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /*	.logo {
+    		background: url(logo2x.jpg) no-repeat;
+    		background-size: 212px 303px;
+    	}*/
+}
