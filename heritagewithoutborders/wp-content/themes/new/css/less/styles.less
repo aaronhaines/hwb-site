@@ -151,25 +151,50 @@ footer > div {
   width: 200px;
 	height: 54px;
 	margin-bottom: 0px;
+  & h5 {
+    color: white;
+    padding-left: 15px;
+    padding-top: 10px;
+    display: block;
+    line-height: 18px;
+  }
 }
 
-.nav-title-box h5 {
-  color: white;
-  padding-left: 15px;
-  padding-top: 10px;
-  display: block;
-  line-height: 18px;
+.sidebar-title-box {
+  .nav-title-box();
+  width: 220px;
+  & h5 {
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: block;
+    line-height: 18px;
+  }
 }
 
 .sidebar {
-  width: 200px;
-  &div {
-    .dark-blue-bg();
+  width: 220px;
+  & div {
+    .sidebar-bg();
     &:first-child {
-      .nav-title-box();
+      .dark-blue-bg();
+      & p {
+        color: white;
+        padding: 20px;
+        display: block;
+        line-height: 18px;
+        margin: 0px;
+      }
     }
     &:last-child {
-      .sidebar-bg()
+      & p {
+        color: @hwb-dark-blue;
+        padding: 20px;
+        display: block;
+        line-height: 18px;
+        margin: 0px;
+      }
+
     }
   }
 }

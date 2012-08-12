@@ -132,20 +132,49 @@ footer > div div:first-child a {
   display: block;
   line-height: 18px;
 }
-.sidebar {
-  width: 200px;
-}
-.sidebardiv {
-  background-color: #00697d;
-}
-.sidebardiv:first-child {
+.sidebar-title-box {
   color: white;
   width: 200px;
   height: 54px;
   margin-bottom: 0px;
+  width: 220px;
 }
-.sidebardiv:last-child {
+.sidebar-title-box h5 {
+  color: white;
+  padding-left: 15px;
+  padding-top: 10px;
+  display: block;
+  line-height: 18px;
+}
+.sidebar-title-box h5 {
+  color: white;
+  padding-left: 20px;
+  padding-top: 10px;
+  display: block;
+  line-height: 18px;
+}
+.sidebar {
+  width: 220px;
+}
+.sidebar div {
   background-color: rgba(35, 160, 185, 0.15);
+}
+.sidebar div:first-child {
+  background-color: #00697d;
+}
+.sidebar div:first-child p {
+  color: white;
+  padding: 20px;
+  display: block;
+  line-height: 18px;
+  margin: 0px;
+}
+.sidebar div:last-child p {
+  color: #00697d;
+  padding: 20px;
+  display: block;
+  line-height: 18px;
+  margin: 0px;
 }
 .content h1 {
   color: #23a0b9;
