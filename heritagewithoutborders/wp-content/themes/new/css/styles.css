@@ -1,3 +1,4 @@
+@import "button.css";
 /*---------------------------------------------------
     LESS Elements 0.6
   ---------------------------------------------------
@@ -14,7 +15,7 @@
   background-color: #ff9a32;
 }
 .dark-blue-bg {
-  background-color: #006579;
+  background-color: #00697d;
 }
 .light-brown-bg {
   background-color: #c0b7ae;
@@ -22,26 +23,23 @@
 .light-grey-bg {
   background-color: #e7e7e8;
 }
+.dark-yellow {
+  color: #ff9a32;
+}
 /* Mixin */
 .nav-grad-bg {
-  background-image: linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -o-linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -moz-linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -webkit-linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -ms-linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.44, #ffffff), color-stop(0.72, #dedede));
+  background-image: -moz-linear-gradient(left top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.05)));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+}
+.sidebar-bg {
+  background-color: rgba(35, 160, 185, 0.15);
 }
 .hwb-nav {
   width: 200px;
-  background-image: linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -o-linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -moz-linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -webkit-linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -ms-linear-gradient(left, #ffffff 44%, #dedede 72%);
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.44, #ffffff), color-stop(0.72, #dedede));
 }
 .hwb-nav a {
-  color: #006579;
+  color: #00697d;
   font-size: 14px;
   text-decoration: none;
 }
@@ -51,18 +49,27 @@
 .hwb-nav ul {
   list-style: none;
   text-align: right;
+  margin: 0px;
 }
 .hwb-nav ul li {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 2px;
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
+  margin-bottom: 1px;
   line-height: 22px;
+  background-image: -moz-linear-gradient(left top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.05)));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
 }
 .hwb-nav ul li:hover {
-  background: white;
+  background-image: none;
+}
+.hwb-nav ul li.selected {
+  background-image: none;
+}
+.hwb-nav ul li.selected:before {
+  content: url('../img/icon-hand.png');
+  padding-right: 10px;
 }
 /* Implementation */
 .rounded-box {
@@ -100,16 +107,17 @@ footer {
 }
 footer > div {
   font-size: 12px;
-  padding: 20px 30px 10px 30px;
+  padding: 14px 30px 10px 30px;
 }
 footer > div div:first-child {
   padding-top: 14px;
 }
 footer > div div:first-child span {
-  color: #006579;
+  color: #00697d;
 }
 footer > div div:first-child a {
-  color: #c0b7ae;
+  color: #998269;
+  font-weight: bold;
 }
 .nav-title-box {
   color: white;
@@ -124,8 +132,23 @@ footer > div div:first-child a {
   display: block;
   line-height: 18px;
 }
+.sidebar {
+  width: 200px;
+}
+.sidebardiv {
+  background-color: #00697d;
+}
+.sidebardiv:first-child {
+  color: white;
+  width: 200px;
+  height: 54px;
+  margin-bottom: 0px;
+}
+.sidebardiv:last-child {
+  background-color: rgba(35, 160, 185, 0.15);
+}
 .content h1 {
-  color: #006579;
+  color: #23a0b9;
 }
 .content h1 + p {
   font-weight: bold;
