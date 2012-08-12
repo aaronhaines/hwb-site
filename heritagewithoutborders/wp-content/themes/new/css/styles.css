@@ -70,8 +70,9 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-body {
-  background: #c0b7ae;
+.container {
+  background-image: url('../img/paper-tile.jpg');
+  background-repeat: repeat;
 }
 .container p {
   color: #444;
@@ -84,13 +85,15 @@ header {
   margin-bottom: 20px;
 }
 footer {
+  border-top: 1px solid #ccc;
   margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px, 40px, 20px, 40px;
+  margin-bottom: 0px;
   background-color: #e7e7e8;
+  background-image: url('../img/footer-tile.jpg');
+  background-repeat: repeat;
 }
-footer div {
-  background: inherit;
+footer > div {
+  padding: 40px 30px 10px 30px;
 }
 .nav-title-box {
   color: white;
@@ -119,6 +122,8 @@ footer div {
 /* ============================== */
 body {
   background: #c0b7ae;
+  background-image: url('../img/bg-tile.jpg');
+  background-repeat: repeat;
 }
 /* ============================= */
 /* ! Layout for mobile version   */
